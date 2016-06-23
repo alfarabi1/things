@@ -1,0 +1,62 @@
+{
+  "name": "iothings",
+  "version": "1.0.0",
+  "description": "save arduino data to sqlLite then tweet it!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "debug": "node-debug index.js",
+    "testbrowser": "browserify index.js -t babelify --outfile bundle.js",
+    "test2": "echo \"Error: no test specified\" && exit 1"
+  },
+  "transform": [
+    [
+      "babelify",
+      {
+        "comments": false
+      }
+    ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfarabi1/things.git"
+  },
+  "keywords": [
+    "plants",
+    "arduino",
+    "raspberry pi",
+    "youtube",
+    "motorcycle",
+    "3d Printing"
+  ],
+  "author": "Hassan Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfarabi1/things/issues"
+  },
+  "homepage": "https://github.com/alfarabi1/things#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "browserify": "^13.0.1",
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "serialport": "^3.1.2",
+    "sqlite3": "^3.1.4",
+    "twitter": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "webpack": "^1.13.1"
+  }
+}
